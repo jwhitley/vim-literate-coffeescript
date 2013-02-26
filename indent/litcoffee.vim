@@ -19,3 +19,4 @@ function GetLitCoffeeIndent()
     return -1
   endif
 endfunc
+

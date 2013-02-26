@@ -114,3 +114,4 @@ of this scope.
 
       assignedVariables: ->
         "#{v.name} = #{v.type.value}" for v in @variables when v.type.assigned
+
