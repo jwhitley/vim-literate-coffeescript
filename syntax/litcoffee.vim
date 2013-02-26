@@ -13,5 +13,5 @@ syn include @markdown syntax/markdown.vim
 syn include @coffee syntax/coffee.vim
 
 syn region commentMarkdown start='^' end='$' contains=@markdown
-syn region inlineCoffee start='    \|\t' end='$' contains=@coffee
+syn region inlineCoffee start='^    \|\t' end='$' contains=@coffee
 
