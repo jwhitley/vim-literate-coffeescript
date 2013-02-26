@@ -1,4 +1,4 @@
-`vim-coffee-script` adds syntax highlighting and indentation support for
+`vim-literate-coffeescript` adds syntax highlighting and indentation support for
 [Literate CoffeeScript](http://coffeescript.org/#literate) to the vim text
 editor.
 
