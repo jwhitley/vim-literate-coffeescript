@@ -3,15 +3,18 @@
 " URL:        https://github.com/mintplant/vim-literate-coffeescript
 " License:    MIT
 
-runtime! syntax/markdowm.vim
-
 if exists('b:current_syntax') && b:current_syntax == 'litcoffee'
   finish
 endif
 
-syn include @markdown syntax/markdown.vim
+runtime! syntax/markdown.vim
+unlet b:current_syntax
+
+syn clear markdownCode
+
 syn include @coffee syntax/coffee.vim
 
-syn region commentMarkdown start='^' end='$' contains=@markdown
 syn region inlineCoffee start='^    \|\t' end='$' contains=@coffee
+
+let b:current_syntax = "litcoffee"
 
