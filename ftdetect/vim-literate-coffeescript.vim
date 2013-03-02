@@ -4,4 +4,5 @@
 " License:    MIT
 
 autocmd BufNewFile,BufRead *.litcoffee set filetype=litcoffee
+autocmd BufNewFile,BufRead *.coffee.md set filetype=litcoffee
 
